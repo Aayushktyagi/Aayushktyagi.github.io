@@ -5,12 +5,38 @@
     <link>https://aayushktyagi.github.io/</link>
       <atom:link href="https://aayushktyagi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Aayush Kumar Tyagi</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Aayush Kumar Tyagi</copyright>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Aayush Kumar Tyagi</copyright><lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0100</lastBuildDate>
     <image>
-      <url>https://aayushktyagi.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <url>https://aayushktyagi.github.io/images/icon_huac0d8c02e9148b7f1804c96347a6bdb8_468957_512x512_fill_lanczos_center_2.png</url>
       <title>Aayush Kumar Tyagi</title>
       <link>https://aayushktyagi.github.io/</link>
     </image>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://aayushktyagi.github.io/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>https://aayushktyagi.github.io/privacy/</guid>
+      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>https://aayushktyagi.github.io/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>https://aayushktyagi.github.io/terms/</guid>
+      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Skin Segmentation from NIR Images using Unsupervised Domain Adaptation through Generative Latent Search</title>
+      <link>https://aayushktyagi.github.io/publication/eccv_2020/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aayushktyagi.github.io/publication/eccv_2020/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

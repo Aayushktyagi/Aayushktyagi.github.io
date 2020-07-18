@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> Prashant Pandey* | Aayush Kumar Tyagi</title>
+    <link>https://aayushktyagi.github.io/author/prashant-pandey/</link>
+      <atom:link href="https://aayushktyagi.github.io/author/prashant-pandey/index.xml" rel="self" type="application/rss+xml" />
+    <description> Prashant Pandey*</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Aayush Kumar Tyagi</copyright>
+    <image>
+      <url>https://aayushktyagi.github.io/images/icon_huac0d8c02e9148b7f1804c96347a6bdb8_468957_512x512_fill_lanczos_center_2.png</url>
+      <title> Prashant Pandey*</title>
+      <link>https://aayushktyagi.github.io/author/prashant-pandey/</link>
+    </image>
+    
+    <item>
+      <title>Skin Segmentation from NIR Images using Unsupervised Domain Adaptation through Generative Latent Search</title>
+      <link>https://aayushktyagi.github.io/publication/eccv_2020/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://aayushktyagi.github.io/publication/eccv_2020/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
