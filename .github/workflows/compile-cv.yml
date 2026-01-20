@@ -21,6 +21,7 @@ jobs:
         with:
           repository: Aayushktyagi/Aayush_CV
           path: CV_source
+          token: ${{ secrets.CV_REPO_TOKEN }}
       
       - name: Compile LaTeX CV
         uses: xu-cheng/latex-action@v3
