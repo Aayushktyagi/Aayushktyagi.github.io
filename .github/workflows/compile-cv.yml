@@ -1,0 +1,42 @@
+name: Compile LaTeX CV
+
+on:
+  # Trigger manually or via repository dispatch from CV repo
+  repository_dispatch:
+    types: [cv-updated]
+  workflow_dispatch:  # Allows manual trigger
+  schedule:
+    - cron: '0 0 * * *'  # Daily check for CV updates
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout website repository
+        uses: actions/checkout@v4
+      
+      - name: Checkout CV repository
+        uses: actions/checkout@v4
+        with:
+          repository: Aayushktyagi/Aayush_CV
+          path: CV_source
+      
+      - name: Compile LaTeX CV
+        uses: xu-cheng/latex-action@v3
+        with:
+          working_directory: CV_source
+          root_file: main.tex
+          latexmk_use_lualatex: true
+      
+      - name: Move compiled PDF to files folder
+        run: |
+          cp CV_source/main.pdf files/cv.pdf
+      
+      - name: Commit and push updated CV
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add files/cv.pdf
+          git diff --staged --quiet || git commit -m "Auto-update CV PDF from LaTeX source"
+          git push
