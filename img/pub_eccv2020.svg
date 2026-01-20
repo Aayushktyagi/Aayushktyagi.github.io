@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+  </defs>
+  <rect fill="url(#grad)" width="400" height="300"/>
+  <text x="200" y="130" font-family="Arial, sans-serif" font-size="20" fill="white" text-anchor="middle" font-weight="bold">ECCV 2020</text>
+  <text x="200" y="160" font-family="Arial, sans-serif" font-size="14" fill="rgba(255,255,255,0.9)" text-anchor="middle">NIR Skin Segmentation</text>
+  <text x="200" y="185" font-family="Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.7)" text-anchor="middle">⭐ Spotlight Paper</text>
+</svg>

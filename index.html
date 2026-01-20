@@ -198,6 +198,154 @@
   
   <link rel="stylesheet" href="/css/academic.css">
 
+  <!-- Custom styles for modern layout -->
+  <style>
+    /* News Section Styles */
+    .news-section {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 2rem 0;
+      margin-bottom: 2rem;
+    }
+    .news-section h1 {
+      color: white;
+      margin-bottom: 1.5rem;
+    }
+    .news-ticker {
+      background: rgba(255,255,255,0.95);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    }
+    .news-item {
+      display: flex;
+      align-items: flex-start;
+      padding: 1rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    .news-item:last-child {
+      border-bottom: none;
+    }
+    .news-date {
+      background: #2962ff;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      min-width: 100px;
+      text-align: center;
+      margin-right: 1rem;
+    }
+    .news-date.highlight {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+    .news-content {
+      flex: 1;
+    }
+    .news-tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1565c0;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+    .news-tag.paper { background: #e8f5e9; color: #2e7d32; }
+    .news-tag.award { background: #fff3e0; color: #ef6c00; }
+    .news-tag.talk { background: #fce4ec; color: #c2185b; }
+    
+    /* Publication Card with Thumbnail */
+    .pub-card {
+      display: flex;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .pub-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    }
+    .pub-thumbnail {
+      width: 200px;
+      min-height: 150px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .pub-thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .pub-thumbnail-placeholder {
+      color: white;
+      font-size: 3rem;
+    }
+    .pub-content {
+      padding: 1.5rem;
+      flex: 1;
+    }
+    .pub-venue {
+      display: inline-block;
+      background: #ff5722;
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+    }
+    .pub-venue.spotlight {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    }
+    .pub-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+    .pub-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .pub-title a:hover {
+      color: #2962ff;
+    }
+    .pub-authors {
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 0.8rem;
+    }
+    .pub-links a {
+      margin-right: 0.5rem;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .pub-card {
+        flex-direction: column;
+      }
+      .pub-thumbnail {
+        width: 100%;
+        height: 150px;
+      }
+      .news-item {
+        flex-direction: column;
+      }
+      .news-date {
+        margin-bottom: 0.5rem;
+      }
+    }
+  </style>
+
   
 
 
@@ -904,6 +1052,63 @@ by customer and sales data.</div>
     </div>
   </section>
 
+  <!-- ======== RECENT NEWS SECTION ======== -->
+  <section id="news" class="home-section news-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4 section-heading">
+          <h1>📰 Recent News</h1>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="news-ticker">
+            
+            <div class="news-item">
+              <span class="news-date highlight">Jan 2026</span>
+              <div class="news-content">
+                <span class="news-tag paper">📄 Paper</span>
+                <strong>[Placeholder]</strong> Paper accepted at <em>Conference Name 2026</em>!
+              </div>
+            </div>
+            
+            <div class="news-item">
+              <span class="news-date">Dec 2025</span>
+              <div class="news-content">
+                <span class="news-tag talk">🎤 Talk</span>
+                Gave an invited talk at <em>Workshop/Event Name</em>
+              </div>
+            </div>
+            
+            <div class="news-item">
+              <span class="news-date">Nov 2025</span>
+              <div class="news-content">
+                <span class="news-tag award">🏆 Award</span>
+                [Placeholder] Received Best Paper Award / Fellowship
+              </div>
+            </div>
+            
+            <div class="news-item">
+              <span class="news-date">Jul 2020</span>
+              <div class="news-content">
+                <span class="news-tag paper">📄 Paper</span>
+                Our paper on <strong>NIR Skin Segmentation</strong> accepted as <em>Spotlight</em> at <a href="/publication/eccv_2020/">ECCV 2020</a>!
+              </div>
+            </div>
+            
+            <div class="news-item">
+              <span class="news-date">Oct 2019</span>
+              <div class="news-content">
+                <span class="news-tag">🎓 Position</span>
+                Joined <strong>IIT Delhi</strong> as a PhD Student
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ======== END NEWS SECTION ======== -->
+
   
   
   
@@ -1149,172 +1354,58 @@ by customer and sales data.</div>
   
   
 
-  <section id="publications" class="home-section wg-pages   "  >
+  <section id="publications" class="home-section wg-pages" style="background: #f8f9fa; padding: 3rem 0;">
     <div class="container">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
 
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
-    <h1>Recent Publications</h1>
-    
+    <h1>📚 Publications</h1>
+    <p class="text-muted">* denotes equal contribution</p>
   </div>
   <div class="col-12 col-lg-8">
 
-    
-
-    
-      
-        
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/publication/eccv_2020/" >Skin Segmentation from NIR Images using Unsupervised Domain Adaptation through Generative Latent Search</a>
-    </h3>
-
-    
-    <div class="article-style">
-      Segmentation of the pixels corresponding to human skin is an essential first step in multiple applications ranging from surveillance to …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  
-  <span > Prashant Pandey*</span>, <span >Aayush Kumar Tyagi* </span>, <span >Sameer Amberkar</span>, <span >Prathosh AP</span>
+    <!-- Publication 1: ECCV 2020 -->
+    <div class="pub-card">
+      <div class="pub-thumbnail">
+        <!-- Replace src with your paper figure/thumbnail -->
+        <img src="/img/pub_eccv2020.svg" alt="ECCV 2020" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <i class="fas fa-image pub-thumbnail-placeholder" style="display:none;"></i>
       </div>
-      
+      <div class="pub-content">
+        <span class="pub-venue spotlight">ECCV 2020 Spotlight</span>
+        <h4 class="pub-title">
+          <a href="/publication/eccv_2020/">Skin Segmentation from NIR Images using Unsupervised Domain Adaptation through Generative Latent Search</a>
+        </h4>
+        <p class="pub-authors">
+          Prashant Pandey*, <strong>Aayush Kumar Tyagi*</strong>, Sameer Amberkar, Prathosh AP
+        </p>
+        <div class="pub-links">
+          <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/abs/2006.08696" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+          <button type="button" class="btn btn-outline-primary btn-sm js-cite-modal" data-filename="/publication/eccv_2020/cite.bib"><i class="fas fa-quote-right"></i> Cite</button>
+          <a class="btn btn-outline-primary btn-sm" href="https://github.com/ambekarsameer96/GLSS" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
     </div>
 
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2006.08696" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/eccv_2020/cite.bib">
-  Cite
-</button>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/ambekarsameer96/GLSS" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Add more publications below using the same format -->
+    <!-- Publication 2: Placeholder for future papers -->
+    <div class="pub-card">
+      <div class="pub-thumbnail">
+        <i class="fas fa-image pub-thumbnail-placeholder"></i>
+      </div>
+      <div class="pub-content">
+        <span class="pub-venue">Venue 2026</span>
+        <h4 class="pub-title">
+          <a href="#">[Add Your Next Paper Title Here]</a>
+        </h4>
+        <p class="pub-authors">
+          <strong>Aayush Kumar Tyagi</strong>, Co-author Names
+        </p>
+        <div class="pub-links">
+          <a class="btn btn-outline-secondary btn-sm disabled" href="#"><i class="fas fa-clock"></i> Coming Soon</a>
+        </div>
+      </div>
     </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-
-    
 
   </div>
 </div>
