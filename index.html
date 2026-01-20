@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="Research Scholar">
+  <meta name="description" content="PhD Student, PMRF">
 
   
   <link rel="alternate" hreflang="en-us" href="https://aayushktyagi.github.io/">
@@ -197,6 +197,155 @@
   
   
   <link rel="stylesheet" href="/css/academic.css">
+
+  <!-- Custom styles for modern layout -->
+  <style>
+    /* News Section Styles - Subtle */
+    .news-section {
+      background: #f8f9fa;
+      padding: 2rem 0;
+    }
+    .news-section h1 {
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+    .news-ticker {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      border: 1px solid #e9ecef;
+    }
+    .news-item {
+      display: flex;
+      align-items: flex-start;
+      padding: 1rem 0;
+      border-bottom: 1px solid #eee;
+    }
+    .news-item:last-child {
+      border-bottom: none;
+    }
+    .news-date {
+      background: #e9ecef;
+      color: #495057;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      min-width: 80px;
+      text-align: center;
+      margin-right: 1rem;
+    }
+    .news-date.highlight {
+      background: #e3f2fd;
+      color: #1565c0;
+    }
+    .news-content {
+      flex: 1;
+    }
+    .news-tag {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #1565c0;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+    .news-tag.paper { background: #e8f5e9; color: #2e7d32; }
+    .news-tag.award { background: #fff3e0; color: #ef6c00; }
+    .news-tag.talk { background: #fce4ec; color: #c2185b; }
+    
+    /* Publication Card - Subtle */
+    .pub-card {
+      display: flex;
+      background: white;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+      border: 1px solid #e9ecef;
+      transition: border-color 0.2s ease;
+    }
+    .pub-card:hover {
+      border-color: #dee2e6;
+    }
+    .pub-thumbnail {
+      width: 180px;
+      min-height: 120px;
+      background: #f8f9fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .pub-thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .pub-thumbnail-placeholder {
+      color: #adb5bd;
+      font-size: 2rem;
+    }
+    .pub-content {
+      padding: 1.2rem;
+      flex: 1;
+    }
+    .pub-venue {
+      display: inline-block;
+      background: #e9ecef;
+      color: #495057;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+    .pub-venue.spotlight {
+      background: #e8f5e9;
+      color: #2e7d32;
+    }
+    .pub-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 0.4rem;
+      line-height: 1.4;
+    }
+    .pub-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .pub-title a:hover {
+      color: #2962ff;
+    }
+    .pub-authors {
+      color: #666;
+      font-size: 0.85rem;
+      margin-bottom: 0.6rem;
+    }
+    .pub-links a, .pub-links button {
+      margin-right: 0.4rem;
+      font-size: 0.8rem;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .pub-card {
+        flex-direction: column;
+      }
+      .pub-thumbnail {
+        width: 100%;
+        height: 120px;
+      }
+      .news-item {
+        flex-direction: column;
+      }
+      .news-date {
+        margin-bottom: 0.5rem;
+      }
+    }
+  </style>
 
   
 
@@ -399,65 +548,36 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#posts" data-target="#posts"><span>Posts</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-        
-        
-        
-        
-        
-          
-          
-          
-            
-          
-          
-        
-
-        <li class="nav-item">
           <a class="nav-link " href="/#publications" data-target="#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#service" data-target="#service"><span>Service</span></a>
         </li>
 
         
@@ -608,7 +728,7 @@
 
       <div class="portrait-title">
         <h2>Aayush Kumar Tyagi</h2>
-        <h3>Research Scholar</h3>
+        <h3>PhD Student, PMRF</h3>
 
         
         <h3>
@@ -711,12 +831,7 @@
     
     <h1>About Me</h1>
 
-    <p>Aayush is a research Assistant at IIT-Delhi.
-Aayush is  interested in working in Deep learning with application in computer vision domain (more
-specifically in video analytic and surveillance). Aayush feels that there is wide scope and impact in this
-domain. Aayush developed my interest in deep learning while pursuing my masters. Aayush is impressed by the
-impact of deep learning in solving vast problems in various domain and it motivates me to be a part
-of journey and able to contribute in same. Aayush  want to work in a research labs or start my own startup.</p>
+    <p>Aayush Kumar Tyagi is a PhD student at the Indian Institute of Technology Delhi (IIT Delhi) and a Prime Minister's Research Fellow (PMRF). His research lies at the intersection of artificial intelligence and medical imaging, with a current focus on the automatic detection and grading of celiac disease, conducted in collaboration with AIIMS Delhi. He completed his Master's degree from IIIT Delhi.</p>
 
 
     <div class="row">
@@ -726,11 +841,11 @@ of journey and able to contribute in same. Aayush  want to work in a research la
         <h3>Interests</h3>
         <ul class="ul-interests">
           
+          <li>Medical Imaging</li>
+          
           <li>Deep Learning</li>
           
-          <li>Computer vision</li>
-          
-          <li>Speech Processing</li>
+          <li>Computer Vision</li>
           
         </ul>
       </div>
@@ -768,262 +883,202 @@ of journey and able to contribute in same. Aayush  want to work in a research la
     </div>
   </section>
 
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="experience" class="home-section wg-experience   "  >
+  <!-- ======== RECENT UPDATES SECTION ======== -->
+  <section id="updates" class="home-section news-section">
     <div class="container">
-      
-
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Experience</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-    
-
-    
-    
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col ">&nbsp;</div>
-          <div class="col">&nbsp;</div>
+      <div class="row">
+        <div class="col-12 col-lg-4 section-heading">
+          <h1>Recent Updates</h1>
         </div>
-        <div class="m-2">
-          <span class="badge badge-pill border exp-fill">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Research Assistant</h4>
-            <h4 class="card-title exp-company text-muted my-0">IIT-Delhi</h4>
-            <div class="text-muted exp-meta">
-              Oct 2019 –
-              
-                Present
-              
-              
-                <span class="middot-divider"></span>
-                <span>New Delhi</span>
-              
+        <div class="col-12 col-lg-8">
+          <div class="news-ticker">
+            
+            <div class="news-item">
+              <span class="news-date highlight">Nov 2025</span>
+              <div class="news-content">
+                <span class="news-tag paper">Paper</span>
+                <strong>BoxCell</strong> accepted at <em>Scientific Reports</em>
+              </div>
             </div>
-            <div class="card-text">We worked on skin segmentation problem from NIR imagaes using unsupervised domain adaptation.
-We cast skin segmentation problem of target independent unsupervised domain adaptation where
-we use the data from Red channel of visible range to develop skin segmentation algorithm on
-NIR images. The paper got accepted by ECCV2020 as spotlight paper</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="row experience">
-      
-      <div class="col-auto text-center flex-column d-none d-sm-flex">
-        <div class="row h-50">
-          <div class="col border-right">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-        <div class="m-2">
-          <span class="badge badge-pill border ">&nbsp;</span>
-        </div>
-        <div class="row h-50">
-          <div class="col ">&nbsp;</div>
-          <div class="col">&nbsp;</div>
-        </div>
-      </div>
-      
-      <div class="col py-2">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title exp-title text-muted mt-0 mb-1">Data Scientist</h4>
-            <h4 class="card-title exp-company text-muted my-0">Innefu Labs</h4>
-            <div class="text-muted exp-meta">
-              Aug 2018 –
-              
-                Sep 2019
-              
-              
-                <span class="middot-divider"></span>
-                <span>New Delhi</span>
-              
+            
+            <div class="news-item">
+              <span class="news-date">Dec 2023</span>
+              <div class="news-content">
+                <span class="news-tag talk">Talk</span>
+                Presented <strong>DeGPR</strong> at <em>Amazon Research Day</em>
+              </div>
             </div>
-            <div class="card-text">I worked in vision domain with application in video surveillance. I
-worked on activity recognition using pose estimation framework to detect crawling and crouching
-near fence area. I also got chance to work on object detection for Egocentric camera(Human
-vision) and high angle cameras. We used object detection to solve various problems like weapon
-detection, trespassing, loitering, safety gear detection and retail analysis by co-relating time spend
-by customer and sales data.</div>
+            
+            <div class="news-item">
+              <span class="news-date">Dec 2023</span>
+              <div class="news-content">
+                <span class="news-tag">Conference</span>
+                Attended <strong>EMNLP 2023</strong> in Singapore
+              </div>
+            </div>
+            
+            <div class="news-item">
+              <span class="news-date">Aug 2023</span>
+              <div class="news-content">
+                <span class="news-tag award">Award</span>
+                Awarded <strong>Prime Minister's Research Fellowship (PMRF)</strong>
+              </div>
+            </div>
+            
+            <div class="news-item">
+              <span class="news-date">Jun 2023</span>
+              <div class="news-content">
+                <span class="news-tag">Conference</span>
+                Attended <strong>CVPR 2023</strong> in Vancouver
+              </div>
+            </div>
+            
+            <div class="news-item">
+              <span class="news-date">Feb 2023</span>
+              <div class="news-content">
+                <span class="news-tag paper">Paper</span>
+                <strong>DeGPR</strong> accepted at <em>CVPR 2023</em>
+              </div>
+            </div>
+            
+            <div class="news-item">
+              <span class="news-date">Aug 2022</span>
+              <div class="news-content">
+                <span class="news-tag">Position</span>
+                Joined <strong>IIT Delhi</strong> as a PhD Student
+              </div>
+            </div>
+            
+            <div class="news-item">
+              <span class="news-date">Jul 2020</span>
+              <div class="news-content">
+                <span class="news-tag paper">Paper</span>
+                Our paper on <strong>NIR Skin Segmentation</strong> accepted as <em>Spotlight</em> at <a href="/publication/eccv_2020/">ECCV 2020</a>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
     </div>
-    
-    
-  </div>
-</div>
-
-    </div>
   </section>
+  <!-- ======== END RECENT UPDATES ======== -->
 
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="accomplishments" class="home-section wg-accomplishments   "  >
+  <!-- ======== PUBLICATIONS SECTION ======== -->
+  <section id="publications" class="home-section wg-pages">
     <div class="container">
-      
-
-
 
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
-    <h1>Accomplish­ments</h1>
-    
+    <h1>Publications</h1>
+    <p class="text-muted">* denotes equal contribution</p>
   </div>
   <div class="col-12 col-lg-8">
-    
 
-    
-    
-      <div class="card experience course">
-        <div class="card-body"><h4 class="card-title exp-title text-muted my-0">Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning</h4><div class="card-subtitle my-0 article-metadata"><a href="https://www.coursera.org" target="_blank" rel="noopener">Coursera</a><span class="middot-divider"></span>
-
-            May 2019
-            
-          </div>
-
-          
-
-          
-            <a class="card-link" href="https://www.coursera.org/account/accomplishments/verify/H8XHBXF5NZMZ" target="_blank" rel="noopener">
-              See certificate
-            </a>
-          
+    <!-- Publication: Scientific Reports 2025 -->
+    <div class="pub-card">
+      <div class="pub-thumbnail">
+        <i class="fas fa-image pub-thumbnail-placeholder"></i>
+      </div>
+      <div class="pub-content">
+        <span class="pub-venue">Scientific Reports 2025</span>
+        <h4 class="pub-title">
+          <a href="#">Guided Prompting in SAM for Weakly Supervised Cell Segmentation in Histopathological Images</a>
+        </h4>
+        <p class="pub-authors">
+          <strong>Aayush Kumar Tyagi</strong>, Vaibhav Mishra, et al.
+        </p>
+        <div class="pub-links">
+          <a class="btn btn-outline-secondary btn-sm disabled" href="#"><i class="fas fa-file-pdf"></i> PDF</a>
         </div>
       </div>
-    
-      <div class="card experience course">
-        <div class="card-body"><h4 class="card-title exp-title text-muted my-0">Convolutional Neural Networks in TensorFlow</h4><div class="card-subtitle my-0 article-metadata"><a href="https://www.coursera.org" target="_blank" rel="noopener">Coursera</a><span class="middot-divider"></span>
+    </div>
 
-            May 2019
-            
-          </div>
-
-          
-
-          
-            <a class="card-link" href="https://www.coursera.org/account/accomplishments/verify/6ZFESLLZGLY6" target="_blank" rel="noopener">
-              See certificate
-            </a>
-          
+    <!-- Publication: MeasureNet 2024 -->
+    <div class="pub-card">
+      <div class="pub-thumbnail">
+        <i class="fas fa-image pub-thumbnail-placeholder"></i>
+      </div>
+      <div class="pub-content">
+        <span class="pub-venue">arXiv 2024</span>
+        <h4 class="pub-title">
+          <a href="https://arxiv.org/abs/2412.01182" target="_blank">MeasureNet: Measurement Based Celiac Disease Identification</a>
+        </h4>
+        <p class="pub-authors">
+          <strong>Aayush Kumar Tyagi</strong>, Vaibhav Mishra, Ashok Tiwari, Lalita Mehra, Prasenjit Das, Govind Makharia, Prathosh AP, et al.
+        </p>
+        <div class="pub-links">
+          <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/abs/2412.01182" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
         </div>
       </div>
-    
-      <div class="card experience course">
-        <div class="card-body"><h4 class="card-title exp-title text-muted my-0">Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</h4><div class="card-subtitle my-0 article-metadata"><a href="https://www.coursera.org" target="_blank" rel="noopener">Coursera</a><span class="middot-divider"></span>
+    </div>
 
-            Jun 2018
-            
-          </div>
-
-          
-
-          
-            <a class="card-link" href="https://www.coursera.org/account/accomplishments/verify/HMBR6JL2BC2X" target="_blank" rel="noopener">
-              See certificate
-            </a>
-          
+    <!-- Publication: CVPR 2023 -->
+    <div class="pub-card">
+      <div class="pub-thumbnail">
+        <i class="fas fa-image pub-thumbnail-placeholder"></i>
+      </div>
+      <div class="pub-content">
+        <span class="pub-venue spotlight">CVPR 2023</span>
+        <h4 class="pub-title">
+          <a href="https://openaccess.thecvf.com/content/CVPR2023/html/Tyagi_DeGPR_Deep_Guided_Posterior_Regularization_for_Multi-Class_Cell_Detection_and_CVPR_2023_paper.html" target="_blank">DeGPR: Deep Guided Posterior Regularization for Multi-Class Cell Detection and Counting</a>
+        </h4>
+        <p class="pub-authors">
+          <strong>Aayush Kumar Tyagi</strong>, Chirag Mohapatra, Prasenjit Das, Govind Makharia, Lalita Mehra, Prathosh AP, Mausam
+        </p>
+        <div class="pub-links">
+          <a class="btn btn-outline-primary btn-sm" href="https://openaccess.thecvf.com/content/CVPR2023/papers/Tyagi_DeGPR_Deep_Guided_Posterior_Regularization_for_Multi-Class_Cell_Detection_and_CVPR_2023_paper.pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+          <a class="btn btn-outline-primary btn-sm" href="https://github.com/Aayushktyagi/DeGPR" target="_blank"><i class="fab fa-github"></i> Code</a>
         </div>
       </div>
-    
-      <div class="card experience course">
-        <div class="card-body"><h4 class="card-title exp-title text-muted my-0">Neural Networks and Deep Learning</h4><div class="card-subtitle my-0 article-metadata"><a href="https://www.coursera.org" target="_blank" rel="noopener">Coursera</a><span class="middot-divider"></span>
+    </div>
 
-            May 2018
-            
-          </div>
-
-          
-
-          
-            <a class="card-link" href="https://www.coursera.org/account/accomplishments/verify/6ZFESLLZGLY6" target="_blank" rel="noopener">
-              See certificate
-            </a>
-          
+    <!-- Publication: Cancers 2022 -->
+    <div class="pub-card">
+      <div class="pub-thumbnail">
+        <i class="fas fa-image pub-thumbnail-placeholder"></i>
+      </div>
+      <div class="pub-content">
+        <span class="pub-venue">Cancers 2022</span>
+        <h4 class="pub-title">
+          <a href="https://www.mdpi.com/2072-6694/14/5/1185" target="_blank">Deep Learning-Based Pan-Cancer Classification Model Reveals Tissue-of-Origin Specific Gene Expression Signatures</a>
+        </h4>
+        <p class="pub-authors">
+          Mayur Divate, <strong>Aayush Tyagi</strong>, Derek J Richard, Prathosh A Prasad, Harsha Gowda, Shivashankar H Nagaraj
+        </p>
+        <div class="pub-links">
+          <a class="btn btn-outline-primary btn-sm" href="https://www.mdpi.com/2072-6694/14/5/1185/pdf" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
         </div>
       </div>
-    
-    
+    </div>
+
+    <!-- Publication: ECCV 2020 -->
+    <div class="pub-card">
+      <div class="pub-thumbnail">
+        <img src="/img/pub_eccv2020.svg" alt="ECCV 2020" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <i class="fas fa-image pub-thumbnail-placeholder" style="display:none;"></i>
+      </div>
+      <div class="pub-content">
+        <span class="pub-venue spotlight">ECCV 2020 Spotlight</span>
+        <h4 class="pub-title">
+          <a href="/publication/eccv_2020/">Unsupervised Domain Adaptation for Semantic Segmentation of NIR Images through Generative Latent Search</a>
+        </h4>
+        <p class="pub-authors">
+          Prashant Pandey*, <strong>Aayush Kumar Tyagi*</strong>, Sameer Ambekar, Prathosh AP
+        </p>
+        <div class="pub-links">
+          <a class="btn btn-outline-primary btn-sm" href="https://arxiv.org/abs/2006.08696" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+          <a class="btn btn-outline-primary btn-sm" href="https://github.com/ambekarsameer96/GLSS" target="_blank"><i class="fab fa-github"></i> Code</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
     </div>
   </section>
+  <!-- ======== END PUBLICATIONS ======== -->
 
   
   
@@ -1055,272 +1110,41 @@ by customer and sales data.</div>
   
   
 
-  <section id="posts" class="home-section wg-pages   "  >
+  <!-- ======== PROFESSIONAL DUTIES SECTION ======== -->
+  <section id="service" class="home-section" style="background: #f8f9fa; padding: 2rem 0;">
     <div class="container">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Recent Posts</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-
-    
-
-    
-
-  </div>
-</div>
-
-    </div>
-  </section>
-
-  
-  
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-  
-  
-
-  <section id="publications" class="home-section wg-pages   "  >
-    <div class="container">
-      
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-<div class="row">
-  <div class="col-12 col-lg-4 section-heading">
-    <h1>Recent Publications</h1>
-    
-  </div>
-  <div class="col-12 col-lg-8">
-
-    
-
-    
-      
-        
-
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <h3 class="article-title mb-0 mt-0">
-      <a href="/publication/eccv_2020/" >Skin Segmentation from NIR Images using Unsupervised Domain Adaptation through Generative Latent Search</a>
-    </h3>
-
-    
-    <div class="article-style">
-      Segmentation of the pixels corresponding to human skin is an essential first step in multiple applications ranging from surveillance to …
-    </div>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
-
-  
-  <span > Prashant Pandey*</span>, <span >Aayush Kumar Tyagi* </span>, <span >Sameer Amberkar</span>, <span >Prathosh AP</span>
+      <div class="row">
+        <div class="col-12 col-lg-4 section-heading">
+          <h1 style="font-size: 1.5rem;">Professional Service</h1>
+          <p class="text-muted" style="font-size: 0.85rem;">Reviewer for conferences & journals</p>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="service-list">
+            <h5 style="color: #333; margin-bottom: 0.75rem; font-size: 0.95rem;">Conference Reviewer</h5>
+            <ul style="list-style: none; padding: 0; margin-bottom: 1rem;">
+              <li style="padding: 0.4rem 0; border-bottom: 1px solid #eee; font-size: 0.9rem;">
+                <strong>MICCAI</strong> <span class="text-muted">— Medical Image Computing and Computer Assisted Intervention</span>
+                <span class="badge badge-light" style="float: right;">2023, 2024, 2025</span>
+              </li>
+              <li style="padding: 0.4rem 0; border-bottom: 1px solid #eee; font-size: 0.9rem;">
+                <strong>AAAI</strong> <span class="text-muted">— Association for the Advancement of Artificial Intelligence</span>
+                <span class="badge badge-light" style="float: right;">2026</span>
+              </li>
+            </ul>
+            
+            <h5 style="color: #333; margin-top: 1rem; margin-bottom: 0.75rem; font-size: 0.95rem;">Journal Reviewer</h5>
+            <ul style="list-style: none; padding: 0;">
+              <li style="padding: 0.4rem 0; border-bottom: 1px solid #eee; font-size: 0.9rem;">
+                <strong>IEEE JSTARS</strong> <span class="text-muted">— IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</span>
+                <span class="badge badge-light" style="float: right;">2025 – Present</span>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://arxiv.org/abs/2006.08696" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
-        data-filename="/publication/eccv_2020/cite.bib">
-  Cite
-</button>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/ambekarsameer96/GLSS" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-      
-    
-
-    
-
-  </div>
-</div>
-
     </div>
   </section>
+  <!-- ======== END PROFESSIONAL DUTIES ======== -->
 
   
   
